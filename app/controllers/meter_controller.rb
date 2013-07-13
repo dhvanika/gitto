@@ -7,8 +7,8 @@ class MeterController < ApplicationController
 
   def show
     @ward = params[:ward]
-    # @crimes = GetWard.new(params[:lat], params[:lon]).ward_number
-    # crimes = GovCrimes.new(@ward).list
+    @crimes = GovCrimesList.new(@ward).last_crimes
+    @crime1 = @crimes[0]
   end
 
   private

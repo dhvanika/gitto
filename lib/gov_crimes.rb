@@ -19,4 +19,5 @@ class GovCrimes
     url << "%27&ward=" + @ward
     url << "&$group=ward"
   end
+
 end

@@ -23,6 +23,12 @@
 
         <h2 style="text-align:center;">Details about your result:</h2>
 
+        <ul id="personal">
+          <% @crimes.each do |crime| %>
+            <li><div><%= crime[:description] %> <span class="crime-date"><%= crime[:time] %></span></div></li>
+          <% end %>
+        </ul>
+
       </div><!--end home box-->
     </div><!--end header-->
 

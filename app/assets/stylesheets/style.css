@@ -405,7 +405,7 @@ div#bio p span{
 div#writeUp{
 	height: 58px;
 }
-div#profileMenu ul#personal li a{
+ul#personal li {
 	display: block;
 	height: 35px;
 	line-height: 40px;
