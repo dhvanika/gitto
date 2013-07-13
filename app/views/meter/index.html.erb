@@ -2,8 +2,9 @@
   <div id="mainMenu">
     <h3>main menu</h3>
     <ul id="explore">
-      <li><a class="currentTab" href="/">HOME</a></li>
-      <li><a href="/">Git.to Meter</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a class="currentTab" href="/meter?lon=<%= @lon %>&lat=<%= @lat %>">Git.to Meter</a></li>
+      <li><a href="/details/<%= @ward %>?lon=<%= @lon %>&lat=<%= @lat %>">Details</a></li>
     </ul>
   </div>
   <div class="container menuClosed profileClosed">

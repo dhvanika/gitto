@@ -24,9 +24,10 @@ $(document).ready ->
         shadow: false
     }
 
-  draw_plot get_array(magic_number)
+  if $('#chart3').length > 0
+    draw_plot get_array(magic_number)
 
-  $('ul#nav li a#menuIcon').click ->
+  $('#menuIcon').click ->
     if($('div.container').hasClass("menuClosed"))
       $('div.container').animate({"margin-left": "240px"}, 200)
       $('div.container').removeClass("menuClosed")
