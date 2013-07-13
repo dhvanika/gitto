@@ -16,4 +16,3 @@
 //= require plugins/jquery.jqplot
 //= require plugins/jqplot.donutRenderer
 //= require meter
-//= require_tree .
