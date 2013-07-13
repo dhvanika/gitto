@@ -9,6 +9,7 @@ GhettoBlaster::Application.routes.draw do
   get "meter", to: "meter#index"
 
   get "welcome", to: "welcome#index2"
+  get "details/:ward", to: "meter#show"
 
   devise_for :users
   resources :users
