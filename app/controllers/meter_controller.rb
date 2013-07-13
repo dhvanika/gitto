@@ -1,7 +1,7 @@
 class MeterController < ApplicationController
   def index
-    # params[:lon], params[:lat]
-    crimes = GovCrimes.new(34).number
+    ward = GetWard.new(params[:lat], params[:lon]).ward_number
+    crimes = GovCrimes.new(ward).number
     @magic_number = CalculateGitto.new(crimes).calculate
   end
 
