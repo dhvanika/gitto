@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require plugins/jquery.jqplot
+//= require plugins/jqplot.donutRenderer
+//= require meter
 //= require_tree .
