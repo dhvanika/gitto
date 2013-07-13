@@ -4,8 +4,8 @@
     <ul id="explore">
       <li><a href="/">Home</a></li>
       <li><a href="/meter?lon=<%= @lon %>&lat=<%= @lat %>">Git.to Meter</a></li>
-      <li><a class="currentTab" href="/details/<%= @ward %>?lon=<%= @lon %>&lat=<%= @lat %>">Details</a></li>
-      <li><a href="/report?ward=<%= @ward %>&lon=<%= @lon %>&lat=<%= @lat %>">Report</a></li>
+      <li><a href="/details/<%= @ward %>?lon=<%= @lon %>&lat=<%= @lat %>">Details</a></li>
+      <li><a class="currentTab" href="/report?ward=<%= @ward %>&lon=<%= @lon %>&lat=<%= @lat %>">Report</a></li>
     </ul>
   </div>
   <div class="container menuClosed profileClosed">
@@ -17,19 +17,15 @@
       <div id="navOptions">
         <ul id="nav">
           <li><a id="menuIcon"><img  src="/images/menu-icon.jpg" width="60"/></a></li>
-          <li><a id="profileIcon" href="/report?ward=<%= @ward %>&lon=<%= @lon %>&lat=<%= @lat %>"><img  src="/images/add-menu-icon.jpg" width="60"/></a></li>
         </ul>
       </div><!--end main Nav-->
       <div class="clear"></div>
       <div id="homeBox" class="statBox">
         <br/>
 
-        <h2 style="text-align:center;">Details about your result:</h2>
+        <h2 style="text-align:center;">Report an incident:</h2>
 
         <ul id="personal">
-          <% @crimes.each do |crime| %>
-            <li><div class="crime-description"><%= crime[:description] %> <span class="crime-date"><%= crime[:time] %></span></div></li>
-          <% end %>
         </ul>
 
       </div><!--end home box-->

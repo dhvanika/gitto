@@ -5,6 +5,7 @@
       <li><a href="/">Home</a></li>
       <li><a class="currentTab" href="/meter?lon=<%= @lon %>&lat=<%= @lat %>">Git.to Meter</a></li>
       <li><a href="/details/<%= @ward %>?lon=<%= @lon %>&lat=<%= @lat %>">Details</a></li>
+      <li><a href="/report?ward=<%= @ward %>&lon=<%= @lon %>&lat=<%= @lat %>">Report</a></li>
     </ul>
   </div>
   <div class="container menuClosed profileClosed">
@@ -16,6 +17,7 @@
       <div id="navOptions">
         <ul id="nav">
           <li><a id="menuIcon"><img  src="/images/menu-icon.jpg" width="60"/></a></li>
+          <li><a id="profileIcon" href="/report?ward=<%= @ward %>&lon=<%= @lon %>&lat=<%= @lat %>"><img  src="/images/add-menu-icon.jpg" width="60"/></a></li>
         </ul>
       </div><!--end main Nav-->
       <div class="clear"></div>
@@ -28,7 +30,9 @@
           </div>
           <div id="chart3" data-number="<%= @magic_number %>" ></div>
         </div>
-        <h2 style="text-align:center;">Neighborhood Rating: <span> "Posh-ish" </span> - Go ahead, wear your Rolex.</h2>
+        <h2 style="text-align:center;">
+          <%= raw @phrase %>
+        </h2>
 
         <div class="why-button">
           <ul class="innerPagelist">
