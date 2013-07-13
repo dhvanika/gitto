@@ -1,8 +1,8 @@
 class MeterController < ApplicationController
   def index
     # params[:lon], params[:lat]
-    crimes = GovCrimes.new().number
-    @magic_number = average(crimes)
+    crimes = GovCrimes.new(34).number
+    @magic_number = CalculateGitto.new(crimes).calculate
   end
 
   private
