@@ -1,6 +1,6 @@
 geolocation_success = (p) ->
   $(".status").text("Geolocation success")
-  window.location.replace("/")
+  window.location.replace("/meter?lon=" + p.coords.longitude + "&lat=" + p.coords.latitude)
 
 geolocation_error = ->
   $(".status").text("Geolocation error")
