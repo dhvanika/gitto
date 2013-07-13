@@ -36,3 +36,10 @@ $(document).ready ->
       $('div.container').animate({"margin-left": "0px"}, 200)
       $('div.container').removeClass("menuOpen")
       $('div.container').addClass("menuClosed")
+
+  $('#fake-report').click (e) ->
+    lon = $(e.target).data("lon")
+    lat = $(e.target).data("lat")
+    ward = $(e.target).data("ward")
+    console.log lon, lat, ward
+    window.location.replace("/meter?ward=" + ward + "&lon=" + lon + "&lat=" + lat)
