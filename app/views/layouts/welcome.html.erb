@@ -1,28 +1,26 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html">
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Gitto Blaster" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Gitto Blaster" %>">
+    <meta charset="utf-8" />
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Git.to mobile app</title>
+    <meta name="description" content="" />
+    <meta name="author" content="David Ip" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= stylesheet_link_tag "style", :media => "all" %>
     <%= javascript_include_tag "welcome" %>
     <%= csrf_meta_tags %>
-    <%= yield(:head) %>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   </head>
+
   <body class="<%= controller_name %> <%= action_name %>">
-    <div id="main" role="main">
-      <div class="container">
-        <div class="content">
-           <div class="row">
-            <div class="span12">
-              <%= render 'layouts/messages' %>
-              <%= yield %>
-            </div>
-          </div>
-          <footer>
-          </footer>
-        </div>
-      </div> <!--! end of .container -->
-    </div> <!--! end of #main -->
+    <%= yield %>
   </body>
 </html>

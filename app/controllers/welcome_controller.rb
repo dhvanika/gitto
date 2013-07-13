@@ -3,4 +3,8 @@ class WelcomeController < ApplicationController
 
   def index
   end
+
+  def index2
+    render 'index', layout: "application"
+  end
 end

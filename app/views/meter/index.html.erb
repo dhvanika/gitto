@@ -1,10 +1,35 @@
-<div class="gitto-text">
-  Gitto number for your current location is:
-</div>
-
-<div class="circle-placeholder">
-  <div class="number-display">
-    <%= @magic_number %>%
+<div id="window">
+  <div id="mainMenu">
+    <h3>main menu</h3>
+    <ul id="explore">
+      <li><a class="currentTab" href="/">HOME</a></li>
+      <li><a href="/">Git.to Meter</a></li>
+    </ul>
   </div>
-  <div id="chart3" data-number="<%= @magic_number %>" ></div>
-<div>
+  <div class="container menuClosed profileClosed">
+    <div id="header">
+      <div class="top-logo-wrapper">
+        <img id="lbLogo" src="images/Gitto-top-logo.jpg" width="160"/>
+      </div>
+
+      <div id="navOptions">
+        <ul id="nav">
+          <li><a id="menuIcon"><img  src="images/menu-icon.jpg" width="60"/></a></li>
+        </ul>
+      </div><!--end main Nav-->
+      <div class="clear"></div>
+      <div id="homeBox" class="statBox">
+        <br/>
+        <h2>The current GIT.TO score in your 'hood is :</h2>
+        <div class="circle-placeholder">
+          <div class="number-display">
+            <%= @magic_number %>%
+          </div>
+          <div id="chart3" data-number="<%= @magic_number %>" ></div>
+        </div>
+        <h2>Neighborhood Rating: <span> "Posh-ish" </span> - Go ahead, wear your Rolex.</h2>
+      </div><!--end home box-->
+    </div><!--end header-->
+
+  </div><!--end container-->
+</div><!--end window-->

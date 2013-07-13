@@ -26,3 +26,12 @@ $(document).ready ->
 
   draw_plot get_array(magic_number)
 
+  $('ul#nav li a#menuIcon').click ->
+    if($('div.container').hasClass("menuClosed"))
+      $('div.container').animate({"margin-left": "240px"}, 200)
+      $('div.container').removeClass("menuClosed")
+      $('div.container').addClass("menuOpen")
+    else if ($('div.container').hasClass("menuOpen"))
+      $('div.container').animate({"margin-left": "0px"}, 200)
+      $('div.container').removeClass("menuOpen")
+      $('div.container').addClass("menuClosed")

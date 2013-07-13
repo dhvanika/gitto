@@ -1,0 +1,430 @@
+/****** BEGIN HTML5 RESET *****************/
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.floatL{
+	float: left;
+}
+.pointsR{
+	float: right;
+	margin-top: -30px;
+}
+/****** END HTML5 RESET*****************/
+a {
+	text-decoration: none;
+}
+
+
+/*******************
+-------MAIN STYLES--------
+*******************/
+body {
+	font-size: 1em;
+	color: #001f2e;
+	background: #001a29;
+	font-family: myriad pro, Verdana, Trebuchet, sans-serif;
+}
+div.introContainer{
+	width: 100%;
+	padding-bottom: 10px;
+  height: 100%;
+	background: url(../images/bg-page.gif) repeat 0 0;
+}
+div#introLogo{
+  text-align: center;
+}
+div.introContainer img{
+	margin-top: 10px;
+}
+div#lance img{
+	background-size: 320px 208px;
+}
+div#logIn img{
+	margin-left: 10px;
+}
+div#logIn img.social{
+	margin-left: 65px;
+	margin-top: 4px;
+}
+div#logIn p{
+	color: #002D5B;
+	    font-size: 18px;
+	    font-weight: bold;
+	    line-height: 24px;
+	    padding: 0 65px;
+}
+div#window{
+	overflow: hidden;
+	width: 100%;
+  height: 100%;
+}
+div#mainMenu {
+	height: 100%;
+	width: 236px;
+	background: #001a29;
+	position: absolute;
+	color: #f5f5f5;
+	border-right:  4px solid #226193;
+}
+div.container {
+	width: 100%;
+	background: #eeeeee;
+	position: relative;
+	margin-left: 0;
+}
+div#profileMenu {
+	width: 0px;
+	overflow: hidden;
+	background: #001a29;
+	height: 100%;
+	position: absolute;
+	margin-left: 100%;
+	top: 0;
+	border-left:  4px solid #226193;
+}
+.clear{
+	clear: both;
+	height: 0px !important;
+}
+h1 {
+	font-size: 48px;
+	color: #002f5c;
+	font-weight: bold;
+	line-height: 44px;
+}
+h1 span{
+	font-size: 24px;
+}
+h2 {
+	font-size: 14px;
+	color: #666666;
+	font-weight: bold;
+}
+h2 span{
+	color: #0062b2;
+}
+h3{
+	line-height: 32px;
+	font-size: 20px;
+	padding: 10px 0 10px 20px;
+	font-weight: normal;
+	color: #b0deff;
+}
+h4{
+	font-size: 24px;
+	font-weight: bold;
+	width: auto;
+	padding: 0;
+	line-height: 30px;
+}
+h4 span{
+	font-size: 18px;
+	font-weight: bold;
+	color: #666666;
+}
+.statBox{
+	background: white;
+	border:  4px solid #b7b7b7;
+	width: 82%;
+	margin: auto;
+}
+#homeBox{
+	padding: 20px 15px 8px;
+}
+#pageBox{
+	padding: 10px 15px 8px;
+	margin-bottom: 12px;
+}
+div.top-logo-wrapper {
+  margin: 0 auto;
+  width: 160px;
+}
+div#header {
+  height: 100%;
+}
+div#header img#lbLogo{
+	margin: auto;
+	position: absolute;
+	top: -3px;
+	/* left: 81px; */
+  left: 50%;
+  margin-left: -80px;
+}
+div#header img#lbLogo.innerLogo{
+	top: 15px;
+}
+div#navOptions{
+	padding: 12px 10px 12px 12px;
+	height: 36px;
+}
+div#navOptions ul#nav li a#menuIcon{
+	float: left;
+}
+div#navOptions ul#nav li a#profileIcon{
+	float: right;
+}
+div.avatar{
+	background: url(../images/avatar.jpg) no-repeat 0 0;
+	height: 65px;
+	width: 67px;
+	background-size: 67px 65px;
+	float: left;
+	margin-top: 6px
+}
+div.totalPoints{
+	background: url(../images/points.png) no-repeat 0 0;
+	height: 41px;
+	width: 180px;
+	padding: 12px;
+	background-size: 180px 65px;
+	margin: 6px 0 10px 85px;
+}
+div.statusBar{
+	background: url(../images/status-bar.jpg) no-repeat 0 0;
+	height: 27px;
+	width: 260px;
+	background-size: 260px 27px;
+	margin-bottom: 8px;
+}
+div#mainContent{
+	background: #003651;
+}
+div#mainContent ul.pagelist li{
+	background: url(../images/tabl-btn-bg.png) repeat 0 0;
+	width: 100%;
+	height: 40px;
+	padding: 12px 0 18px 0;
+	border-top: 1px solid #226193;
+	border-bottom: 2px solid #00090e;
+}
+div#mainContent ul.innerPagelist li{
+	background: url(../images/tabl-btn-bg.png) repeat 0 0;
+	width: 100%;
+	height: 48px;
+	padding: 15px 0 15px 0;
+	border-top: 1px solid #226193;
+	border-bottom: 2px solid #00090e;
+}
+div.instructions p{
+	font-size: 12px;
+	color: #666666;
+	padding: 16px 0px 16px 9px;
+}
+div.instructions p span{
+	font-size: 13px;
+	font-weight: bold;
+}
+div#Footer{
+	background: #001f2e;
+	height: 64px;
+	color: #f5f5f5;
+}
+div#Footer p{
+	padding: 20px 0 0 16px;
+}
+div#Footer p strong{
+	font-weight: bold;
+}
+ul.pagelist a.Tblbtn{
+	background: url(../images/red-box.png) no-repeat 0 0;
+	width: 165px;
+	height: 50px;
+	background-size: 165px 50px;
+}
+ul.pagelist a.Tblbtn p{
+	background: url(../images/red-box.png) no-repeat 0 0;
+	width: 165px;
+	height: 50px;
+	background-size: 165px 50px;
+	line-height: 50px;
+	color: #fafafa;
+	padding: 0 0 0 40px;
+	font-size: 24px;
+}
+ul.innerPagelist a.PageBtn p{
+	background: url(../images/redBox-left.png) no-repeat 0 0;
+	height: 50px;
+	line-height: 50px;
+	color: #fafafa;
+	padding: 0 0 0 20px;
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+}
+ul.innerPagelist a.PageBtn p span{
+	background: url(../images/redBox-right.png) no-repeat right top;
+	height: 50px;
+	line-height: 50px;
+	padding: 15px 20px 18px 15px;
+}
+ul.innerPagelist a.PageBtn h5{
+	padding-left: 5px;
+	color: #b0deff;
+	font-size: 18px;
+	float: left;
+	line-height: 50px;
+}
+div#mainContent ul.pagelist li img{
+	float: right;
+	margin-right: 14px;
+	margin-top: -33px;
+}
+div#mainContent ul.innerPagelist li img{
+	float: right;
+	margin-right: 14px;
+	margin-top: 16px;
+}
+ul.pagelist a.Tblbtn p span{
+	padding-left: 75px;
+	color: #b0deff;
+	font-size: 16px;
+}
+div#mainMenu ul#explore li a{
+	display: block;
+	height: 35px;
+	line-height: 40px;
+	color: #f5f5f5;
+	font-size: 18px;
+	padding: 10px 0 10px 20px;
+	background: #003962;
+	background: -moz-linear-gradient(left, #08283f, #011d2b);
+	background: -webkit-gradient(linear, left top, right top, from(#08283f), to(#011d2b));
+	border-top: 1px solid #226193;
+	border-bottom: 1px solid #00090e;
+}
+div#mainMenu ul#explore li a:visited{
+	text-decoration: none;
+	color: #f5f5f5;
+}
+div#mainMenu ul#explore li a.currentTab{
+	font-size: 22px;
+	padding: 10px 0 10px 40px;
+	line-height: 38px;
+	font-weight: bold;
+	background: #08283f;
+	background: -moz-linear-gradient(left, #072a46, #226193);
+	background: -webkit-gradient(linear, left top, right top, from(#072a46), to(#226193));
+	text-shadow: #a3d7ff 0em 0em 0.3em;
+}
+div.pageTips{
+	padding: 14px;
+}
+div.tipsInner{
+	background: #002640;
+	border: 1px solid #19639c;
+}
+div.tipsInner p{
+	color: #f5f5f5;
+	font-size:14px;
+	font-weight: bold;
+	padding:16px 8px 16px 12px;
+}
+div.todoList{
+	background: #002640;
+	border: 1px solid #19639c;
+	padding: 8px 4px;
+}
+div.todoList p{
+	color: #b0deff;
+	font-size: 14px;
+	margin-left: 5px;
+	line-height: 20px;
+}
+div.todoList p span{
+	color: #f5f5f5;
+	font-size: 12px;
+}
+div#Footer img{
+	background-size: 67px 40px;
+	float: right;
+	margin: 12px 16px 0 0;
+}
+div#progress p{
+	color: #b0deff;
+	font-size: 18px;
+	padding: 20px 14px 8px;
+}
+div#progress img{
+	margin-left: 14px;
+}
+div#bio{
+	margin-left: 14px;
+	margin-top: 20px;
+}
+div#bio img{
+	float: left;
+	margin: 0 10px 10px 0;
+}
+div#bio p{
+font-size: 14px;
+	float: left;
+	color: #b0deff;
+	line-height: 20px;
+}
+div#bio p span{
+	color: #f5f5f5;
+}
+div#writeUp{
+	height: 58px;
+}
+div#profileMenu ul#personal li a{
+	display: block;
+	height: 35px;
+	line-height: 40px;
+	color: #f5f5f5;
+	font-size: 18px;
+	padding: 10px 0 10px 20px;
+	background: #003962;
+	background: -moz-linear-gradient(left, #011d2b, #08283f);
+	background: -webkit-gradient(linear, left top, right top, from(#011d2b), to(#08283f));
+	border-top: 1px solid #226193;
+	border-bottom: 1px solid #00090e;
+}
+div#profileMenu ul#personal li a:visited{
+	text-decoration: none;
+	color: #f5f5f5;
+}
+
+
+
+
+
+
