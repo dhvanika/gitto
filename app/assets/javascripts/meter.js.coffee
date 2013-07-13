@@ -11,6 +11,8 @@ $(document).ready ->
         # sliceMargin: 3,
         # // Pies and donuts can start at any arbitrary angle.
         startAngle: 90,
+        innerDiameter: 210,
+        thickness: 5,
         # showDataLabels: true,
         # // By default, data labels show the percentage of the donut/pie.
         # // You can show the data 'value' or data 'label' instead.
