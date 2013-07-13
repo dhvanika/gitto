@@ -15,6 +15,7 @@ gem 'figaro'
 gem 'libv8'
 gem 'rolify'
 gem 'simple_form'
+gem 'httparty'
 group :assets do
   gem 'therubyracer', :platform=>:ruby, :require=>"v8"
 end
@@ -34,5 +35,4 @@ group :test do
   gem 'database_cleaner'
   gem 'email_spec'
   gem 'launchy'
-  gem 'httparty'
 end

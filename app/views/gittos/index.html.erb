@@ -7,15 +7,11 @@
     <th></th>
   </tr>
 
-<% @gittos.each do |gitto| %>
-  <tr>
-    <td><%= link_to 'Show', gitto %></td>
-    <td><%= link_to 'Edit', edit_gitto_path(gitto) %></td>
-    <td><%= link_to 'Destroy', gitto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
 </table>
-
+  <%= @crime['block'] %>
+  <% @response.each do |response| %>
+    <%= response['block'] %>
+  <% end %>
 <br />
 
 <%= link_to 'New Gitto', new_gitto_path %>

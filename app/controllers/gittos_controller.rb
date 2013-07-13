@@ -1,12 +1,16 @@
 class GittosController < ApplicationController
+  include HTTParty
   # GET /gittos
   # GET /gittos.json
   def index
     url = "https://data.cityofchicago.org/resource/x2n5-8w5q.json"
-    @response = HTTParty.get(url)
+    options = { :body => {:status => text}, :basic_auth => @auth }
+    @response = HTTParty.get(url, options)
 
     @crime = Hash.new
-    @crime['block'] = @response[0]['block']
+
+    #@crime['block'] = @response[0]['block']
+    @crime = @response
 
     respond_to do |format|
       format.html # index.html.erb
