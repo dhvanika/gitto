@@ -1,6 +1,13 @@
 class MeterController < ApplicationController
   def index
-    # these are the params available here
-    # puts "Coordinates: " + params[:lat] + ", " + params[:lon]
+    # params[:lon], params[:lat]
+    crimes = GovCrimes.new().number
+    @magic_number = average(crimes)
+  end
+
+  private
+
+  def average(number)
+    100 - (number.to_f / 10_000)*100
   end
 end
