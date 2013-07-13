@@ -4,7 +4,7 @@
 
 #chart3 {
   height:300px;
-  width:300px;
+  width:250px;
   margin: 0 auto;
 }
 
@@ -12,8 +12,8 @@
   color: #ed2024;
   font-size: 50px;
   z-index: 10;
-  margin-left: 110px;
-  margin-top: 120px;
+  margin-left: 105px;
+  margin-top: 115px;
   position: absolute;
 }
 
@@ -34,7 +34,12 @@
   margin-top: 20px;
 }
 
+.crime-description {
+  font-size: 15px;
+}
+
 .crime-date {
   float: right;
   margin-right: 15px;
+  font-size: 13px;
 }
