@@ -1,4 +1,7 @@
 GhettoBlaster::Application.routes.draw do
+  resources :gittos
+
+
   authenticated :user do
     root :to => 'home#index'
   end
