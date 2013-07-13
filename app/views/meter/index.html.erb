@@ -1,6 +1,10 @@
-<div>
-  This is the meter page with a nice ghetto number.
-  Magic number is <%= @magic_number %>
+<div class="gitto-text">
+  Gitto number for your current location is:
 </div>
 
-<div id="chart3" data-number="<%= @magic_number %>" ></div>
+<div class="circle-placeholder">
+  <div class="number-display">
+    <%= @magic_number %>%
+  </div>
+  <div id="chart3" data-number="<%= @magic_number %>" ></div>
+<div>

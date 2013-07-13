@@ -9,8 +9,8 @@ $(document).ready ->
   draw_plot = (array) ->
     plot = $.jqplot 'chart3', [array], {
       seriesDefaults:
-        seriesColors: ['orange', 'white'],
-        highlightColors: ['orange', 'white']
+        seriesColors: ['#ed2024', '#eee'],
+        highlightColors: ['#ed2024', '#eee']
         renderer:$.jqplot.DonutRenderer
         rendererOptions:
           startAngle: 90
@@ -24,24 +24,5 @@ $(document).ready ->
         shadow: false
     }
 
-  percentage = 2
-
-  # draw_plot get_array(magic_number)
-
-  upInterval = setInterval( ->
-    draw_plot get_array(percentage)
-    percentage = percentage + 0.5
-    if percentage > 100
-      clearInterval(upInterval)
-      # drawDownToValue()
-  , 10)
-
-  # drawDownToValue = ->
-  #   upInterval = setInterval( ->
-  #     draw_plot get_array(percentage)
-  #     if percentage == 100
-  #       clearInterval(interval)
-  #       drawDownToValue()
-  #   , 250)
-
+  draw_plot get_array(magic_number)
 
